@@ -1,0 +1,35 @@
+$(".class").hover(function(){
+$(this).css('background','green');
+});
+
+
+
+$(".feature-container').on('click',function(){
+
+$(this).css('background','green');
+});
+
+
+$(document).on('click',"featute-container",function(){
+
+$(this).css('background','green');
+
+ });                 immportant..oneksomoy class ta pay na tai eta bebohar kora valo..
+                ekotre ekoi evnt duta lkaj korte toggle bebohar kora hoy..
+
+
+
+$('.feature-container').on({'mouseenter click',function(){
+
+$(this).css('background','green');
+},'mouseleave':function(){
+$(this).css('background','white');
+});                                               koma ta dite hobe maje..
+
+
+set timeout function*****
+setTimeout(function){
+
+$(".feature-container").fadeout(1000);
+},3000);
+
