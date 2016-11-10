@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> third html project </title>
+
+
+</head>
+<body> 
+
+
+
+<div id="a">
+</div>
+<script >
+var cars= ["80", "30", "35", "25", "34", "14"];
+var r=[];
+var text = "";
+var i;
+var k;
+
+for (i = 0; i < cars.length; i++) {sum=0;
+    for(k = 0; k < cars.length; k++)
+	{
+	
+	if(cars[i]>cars[k])
+	{var w=2;}
+	else
+	{var w=1;}
+	
+	sum=sum+w;
+
+	}//alert(sum);
+	switch(sum){
+		case 6:
+		 r[0]=cars[i];
+		break;
+		
+		case 7:
+		 r[1]=cars[i];//alert(r[1]);
+		break;
+		
+		case 8:
+		 r[2]=cars[i];
+		break;
+		
+		case 9:
+	    r[3]=cars[i];
+		break;
+		
+		case 10:
+		 r[4]=cars[i];
+		break;
+		
+		case 11:
+		 r[5]=cars[i];
+		break;
+		
+		}
+	    
+	/*if(sum==6)
+	var r=cars[i];
+	else if(sum==1)
+	var q=cars[i];*/
+	
+	
+
+};//alert(r);
+	
+document.getElementById("a").innerHTML ='the bubble sort value'+r;
+
+
+</script>
+
+</body>
+</html>

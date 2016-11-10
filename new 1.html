@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>jog korle 120</title>
+
+
+</head>
+<body> <h1>adding any three number that bear the result 120</h1>
+start:<input id="a" type="text" placeholder="<60"></br></br>
+end:<input id="b" type="text" placeholder="<120 ">
+<button id="v">
+</button>
+<p id="c"></p>
+<script >
+
+
+var p=parseInt(document.getElementById('a').value);
+//var q=parseInt(document.getElementById('b').value);
+document.getElementById("v").addEventListener('click',function(){
+var p=parseInt(document.getElementById('a').value);
+var q=parseInt(document.getElementById('b').value);
+
+
+
+
+
+//document.getElementById("v").addEventListener('click',function(){
+
+var text = "";
+var i;
+var k;
+var l;
+
+
+for (i=p; i<(q-2); i++) 
+    {
+       for(k =p+1; k <(q-1); k++)
+	     {
+             for(l =p+2; l<q; l++)
+			   {
+			      if(i+k+l==120)
+				   {var r=1;
+				   text+="</br>"+i+","+k+","+l;}
+				  
+				   
+				  
+				}
+          }
+    }		  
+			 
+	
+	
+	
+	    
+	
+	
+document.getElementById("c").innerHTML=text;})
+
+
+</script>
+
+</body>
+</html>
